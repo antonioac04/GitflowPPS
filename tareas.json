@@ -1,12 +1,42 @@
 [
     {
         "id": 1,
-        "titulo": "Hacer la práctica de Git",
-        "completada": false
+        "titulo": "Hacer la práctica de Git"
     },
     {
         "id": 2,
-        "titulo": "Subir el proyecto a GitHub",
-        "completada": true
+        "titulo": "Subir el proyecto a GitHub"
+    },
+    {
+        "id": 3,
+        "titulo": "Crear un README.md para el proyecto"
+    },
+    {
+        "id": 4,
+        "titulo": "Implementar la funcionalidad de tareas"
+    },
+    {
+        "id": 5,
+        "titulo": "Diseñar la interfaz de usuario"
+    },
+    {
+        "id": 6,
+        "titulo": "Realizar pruebas unitarias"
+    },
+    {
+        "id": 7,
+        "titulo": "Documentar el código"
+    },
+    {
+        "id": 8,
+        "titulo": "Configurar el entorno de desarrollo"
+    },
+    {
+        "id": 9,
+        "titulo": "Integrar con una base de datos"
+    },
+    {
+        "id": 10,
+        "titulo": "Desplegar la aplicación en un servidor"
     }
 ]
