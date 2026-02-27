@@ -7,6 +7,9 @@ if (file_exists($jsonPath)) {
     $content = file_get_contents($jsonPath);
     $tareas = json_decode($content, true) ?: [];
 }
+
+include_once 'procesarNuevaTarea.php';
+ProcesarNuevaTarea($jsonPath, $tareas);
 ?>
 
 <!DOCTYPE html>
@@ -54,6 +57,13 @@ if (file_exists($jsonPath)) {
                     <p class="text-slate-600 italic">No hay tareas pendientes en el backlog.</p>
                 </div>
             <?php endif; ?>
+             <div class="space-y-4 pb-10">
+                <h1>¿Desea agregar alguna tarea?</h1>
+                <form action="<?php echo $_SERVER['PHP_SELF'];?>" method="POST" class="flex gap-2 items-center mt-4">
+                    <input type="text" placeholder="Depurar código" name="tarea" required class="px-3 py-2 rounded-lg text-white placeholder-white flex-1 border border-white bg-slate-800 focus:border-blue-400 focus:outline-none">
+                    <button type="submit" class="px-4 py-2 bg-blue-500 text-white rounded-lg hover:bg-blue-600 transition-colors">Añadir tarea</button>
+                </form>
+            </div>
         </div>
     </main>
 
